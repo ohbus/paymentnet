@@ -8,6 +8,7 @@
 <%@page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
 <html>
 	<head>
+            
 		<title>
 			Welcome Page
 		</title>
@@ -105,5 +106,7 @@
 			</div>		
 
 </div>
+            
 	</body>
+        
 </html>

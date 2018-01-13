@@ -10,7 +10,7 @@
 
 <div id="header">
 					<h4>
-						Copyright 2012 All rights reserved.fore more information please visit: <a href="www.javatpoint.com"><font style="color: yellow;">javatpoint.com</font></a>
+						For more information please visit: <a href="https://ohbus.github.io"><font style="color: yellow;">Subhrodip Mohanta</font></a>
 					</h4>
 			</div>
 		

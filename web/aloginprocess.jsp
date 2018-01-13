@@ -12,7 +12,7 @@
 		
 if(request.getParameter("username").equalsIgnoreCase(username)&& request.getParameter("userpass").equalsIgnoreCase(password))
 {
-session.setAttribute("islogin","plz sign in first");
+    session.setAttribute("islogin","Please, Sign in first");
 %>
 <jsp:forward page="ahome.jsp"></jsp:forward>
 <% 

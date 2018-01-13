@@ -25,7 +25,7 @@ String address=request.getParameter("address");
 String description=request.getParameter("description");
 String trainer=request.getParameter("trainer");
 Class.forName("oracle.jdbc.driver.OracleDriver");
-Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","oracle");
+Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","1234");
 PreparedStatement ps=con.prepareStatement("insert into student2 values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 
 ps.setString(1,id);

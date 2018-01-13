@@ -90,7 +90,7 @@ request.setAttribute("notlogin_msg","Sorry,Please do Login first");
 <div id="main">
 
 
-<h3 style="color: navy;" align="center"><B>Consultant:-   JavaTpoint</B></h3>
+<h3 style="color: navy;" align="center"><B>Consultant:-   Subhrodip</B></h3>
 <div id="box">
 <%
 if(request.getAttribute("msg")!=null){

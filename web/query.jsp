@@ -10,7 +10,7 @@
 String query=request.getParameter("query");
 String email=request.getParameter("email");
 Class.forName("oracle.jdbc.driver.OracleDriver");
-Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","oracle");
+Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","1234");
 PreparedStatement ps=con.prepareStatement("insert into query values(?,?)");
 ps.setString(1,query);
 ps.setString(2,email);

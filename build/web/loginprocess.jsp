@@ -16,7 +16,7 @@ String branch=request.getParameter("branch");
 boolean status=false;
 try{
 Class.forName("oracle.jdbc.driver.OracleDriver");
-Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","oracle");
+Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","1234");
 PreparedStatement ps=con.prepareStatement("select * from payregister where username=? and userpass=? and branch=? ");
 ps.setString(1,username);
 ps.setString(2,userpass);
@@ -24,10 +24,10 @@ ps.setString(3,branch);
 ResultSet rs=ps.executeQuery();
 status=rs.next();
 if(status){
-System.out.print("hi");
+System.out.print("Hi");
 username=rs.getString(2);
 session.setAttribute("username",String.valueOf(username));
-session.setAttribute("islogin","plz sign in first");
+session.setAttribute("islogin","Please sign in first");
 
 %>
 <jsp:forward page="home.jsp"></jsp:forward>
@@ -36,7 +36,7 @@ session.setAttribute("islogin","plz sign in first");
 else{
 System.out.print("hi");
 request.setAttribute("Error","Sorry! Username or Password Error. Plz Enter Correct Detail ");
-session.setAttribute("Loginmsg","Plz sign in first");
+session.setAttribute("Loginmsg","Please sign in first");
 %>
 <jsp:forward page="index.jsp"></jsp:forward>
 <%

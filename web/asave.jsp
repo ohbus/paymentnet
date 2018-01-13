@@ -16,7 +16,7 @@ String dateofjoining=request.getParameter("doj");
 String salary=request.getParameter("salary");
 String branch=request.getParameter("branch");
 Class.forName("oracle.jdbc.driver.OracleDriver");
-Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","oracle");
+Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","1234");
 PreparedStatement ps=con.prepareStatement("insert into payregister(username,userpass,branch,dateofjoining,dateofbirth,salary) values(?,?,?,?,?,?)");
 
 //ps.setInt(1,2);
