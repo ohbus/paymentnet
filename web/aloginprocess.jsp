@@ -7,8 +7,8 @@
 <%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
 <%@page import="org.omg.CORBA.PUBLIC_MEMBER"%>
 <%
-		String username=getServletContext().getInitParameter("Username");
-		String password=getServletContext().getInitParameter("Password");
+		String username = request.getParameter("Username");
+		String password = request.getParameter("Password");
 		
 if(request.getParameter("username").equalsIgnoreCase(username)&& request.getParameter("userpass").equalsIgnoreCase(password))
 {

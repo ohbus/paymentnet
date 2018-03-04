@@ -41,9 +41,9 @@ request.setAttribute("notlogin_msg","Sorry,Please do Login first");
 </td>
 <td>
 <table align="right" >
-<tr align="left"><td><Font style="color: navy;" size="3">Cont No.:1234567890</Font><br>
+<tr align="left"><td><Font style="color: navy;" size="3">Cont No.:900740495</Font><br>
 <Font style="color: navy;" size="3">Email id:gmail.com</Font><br>
-<Font style="color: navy;" size="3">Contact Person:Rishi</Font>
+<Font style="color: navy;" size="3">Contact Person:Subho</Font>
 </td></tr>
 </table>
 </td>
